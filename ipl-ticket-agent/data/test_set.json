@@ -1,0 +1,77 @@
+{
+  "description": "Manual acceptance test set for the Mumbai Marvels ticket sales agent. All expected answers must remain grounded in data/catalog.json.",
+  "catalog_questions": [
+    {
+      "id": "T01",
+      "question": "What matches are at Wankhede this season?",
+      "expected": "Lists the four Mumbai Marvels home matches, opponents, dates, and times."
+    },
+    {
+      "id": "T02",
+      "question": "How much is the North Stand for the Delhi Dynamos match?",
+      "expected": "Returns 1,500 INR for A1 / North Stand for M1."
+    },
+    {
+      "id": "T03",
+      "question": "Do children need a ticket?",
+      "expected": "Explains the child-ticket rule, including the Family Enclosure discount and under-3 entry pass."
+    },
+    {
+      "id": "T04",
+      "question": "Are there any student offers?",
+      "expected": "Returns the Student Pass: 500 INR in A1 for verified students, subject to availability."
+    },
+    {
+      "id": "T05",
+      "question": "Is parking available at the stadium?",
+      "expected": "Does not invent a public parking policy; explains that parking details are not published and recommends public transport or the box office."
+    },
+    {
+      "id": "T06",
+      "question": "Can I get a refund if I change my mind?",
+      "expected": "Does not claim a general refund right; explains that only the published washout refund is defined and other cases go to the box office."
+    },
+    {
+      "id": "T07",
+      "question": "Is the stadium wheelchair accessible?",
+      "expected": "Does not invent a complete accessibility policy; directs the fan to the box office for the limited unpublished allocation."
+    },
+    {
+      "id": "T08",
+      "question": "What is the early bird discount?",
+      "expected": "Returns 15% off when booked at least 14 days before the match, subject to the first 2,000 tickets per match."
+    }
+  ],
+  "lead_scoring_checks": [
+    {
+      "id": "L01",
+      "check": "Select winback segment",
+      "expected": "20 leads are displayed and none are silently removed."
+    },
+    {
+      "id": "L02",
+      "check": "Inspect L037",
+      "expected": "The impossible -1 lifetime-ticket value is shown as a quality flag and scored using 0 for the cleaned value."
+    },
+    {
+      "id": "L03",
+      "check": "Inspect L053",
+      "expected": "The missing months-since-last-purchase value is flagged and the lead remains in the table."
+    },
+    {
+      "id": "L04",
+      "check": "Inspect blank consent rows",
+      "expected": "Blank SMS or voice consent is flagged and conservatively treated as N."
+    },
+    {
+      "id": "L05",
+      "check": "Inspect DND leads",
+      "expected": "The recommended channel is Email only (DND); SMS and voice are not recommended."
+    },
+    {
+      "id": "L06",
+      "check": "Generate outreach",
+      "expected": "A selected lead receives a short personalised message and the selected offer can be included."
+    }
+  ]
+}

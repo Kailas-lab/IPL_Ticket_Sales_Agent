@@ -1,8 +1,8 @@
 # Mumbai Marvels AI Ticket Sales Agent
 
-# Attached Project Website Link
+## Live Demo
 
-Click Here
+[🚀 View Live Project](https://iplticketapp.streamlit.app/)
 
 ## Client handoff guide
 

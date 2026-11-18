@@ -1,0 +1,169 @@
+{
+  "_note": "Invented IPL team. All data is synthetic/assumed. English only.",
+  "team": "Mumbai Marvels",
+  "home_venue": "Wankhede Stadium, Mumbai",
+  "season": "IPL 2027",
+  "currency": "INR",
+
+  "matches": [
+    {
+      "id": "M1",
+      "opponent": "Delhi Dynamos",
+      "date": "2027-04-12",
+      "time": "19:30",
+      "day": "Monday",
+      "type": "league",
+      "seat_areas_available": ["A1", "A2", "A3", "A4"]
+    },
+    {
+      "id": "M2",
+      "opponent": "Chennai Chargers",
+      "date": "2027-04-19",
+      "time": "15:30",
+      "day": "Monday",
+      "type": "league",
+      "seat_areas_available": ["A1", "A2", "A3", "A4"]
+    },
+    {
+      "id": "M3",
+      "opponent": "Bengaluru Blasters",
+      "date": "2027-05-02",
+      "time": "19:30",
+      "day": "Sunday",
+      "type": "league",
+      "seat_areas_available": ["A1", "A2", "A3", "A4"]
+    },
+    {
+      "id": "M4",
+      "opponent": "Kolkata Knights",
+      "date": "2027-05-15",
+      "time": "19:30",
+      "day": "Saturday",
+      "type": "league",
+      "seat_areas_available": ["A1", "A2", "A3"]
+    }
+  ],
+
+  "seat_areas": [
+    {
+      "id": "A1",
+      "name": "North Stand (General)",
+      "description": "Energetic standing-and-sitting zone behind the sightscreen. Great view of the fast bowlers' run-up. Closest to the sea breeze.",
+      "price_inr_by_match": {
+        "M1": 1500,
+        "M2": 1500,
+        "M3": 1800,
+        "M4": 1500
+      }
+    },
+    {
+      "id": "A2",
+      "name": "East Pavilion (Reserved Seating)",
+      "description": "Reserved bucket seats with backrest. Comfortable for families. Clear sightline of the full pitch.",
+      "price_inr_by_match": {
+        "M1": 3000,
+        "M2": 3000,
+        "M3": 3500,
+        "M4": 3000
+      }
+    },
+    {
+      "id": "A3",
+      "name": "West Corporate Box",
+      "description": "Air-conditioned hospitality box with cushioned seating, complimentary snacks, and a private bar. Reserved for members and corporate guests.",
+      "price_inr_by_match": {
+        "M1": 7500,
+        "M2": 7500,
+        "M3": 9000,
+        "M4": 7500
+      }
+    },
+    {
+      "id": "A4",
+      "name": "Family Enclosure (Kids Welcome)",
+      "description": "Alcohol-free zone with padded seats, a play corner for children under 12, and a dedicated family washroom. Child tickets available.",
+      "price_inr_by_match": {
+        "M1": 2200,
+        "M2": 2200,
+        "M3": 2700,
+        "M4": 2200
+      }
+    }
+  ],
+
+  "faq": [
+    {
+      "id": "child-ticket",
+      "question": "Do children need a ticket?",
+      "answer": "Yes. Every person, including infants in arms, must have a valid ticket to enter, per stadium safety rules. Children aged 3-12 get a 50% discount in the Family Enclosure (A4) only. Under 3 enter free on a parent's lap but still need a zero-value entry pass issued at the gate."
+    },
+    {
+      "id": "where-to-buy",
+      "question": "Where do I buy tickets?",
+      "answer": "Tickets are sold only through the official Mumbai Marvels website and the partner app 'TicketMate'. We do not sell at stadium counters on match day. Third-party resellers are not authorised."
+    },
+    {
+      "id": "payment-methods",
+      "question": "Which payment methods are accepted?",
+      "answer": "UPI, all major credit/debit cards, net banking, and popular wallets. Cash is not accepted online. EMI is available on cards for orders above 6,000 INR."
+    },
+    {
+      "id": "id-proof",
+      "question": "Is an ID proof required at entry?",
+      "answer": "Yes. Each ticket holder aged 12+ must carry a government-issued photo ID matching the name on the ticket. Entry will be denied without it."
+    },
+    {
+      "id": "group-discount",
+      "question": "Is there a group discount?",
+      "answer": "Yes. A confirmed group of 10 or more fans in the East Pavilion (A2) gets 10% off the per-ticket price. Group bookings must be made 72 hours before the match via the group-booking form."
+    },
+    {
+      "id": "entry-timing",
+      "question": "When do gates open?",
+      "answer": "Gates open 90 minutes before the scheduled start of the match. We recommend arriving early to clear security checks."
+    },
+    {
+      "id": "prohibited-items",
+      "question": "What items are not allowed inside?",
+      "answer": "No outside food or drink, no banners larger than A3, no cameras with detachable lenses, no helmets, and no flammable items. A full list is on the stadium website."
+    },
+    {
+      "id": "weather",
+      "question": "What happens if it rains?",
+      "answer": "If no ball is bowled, full refund is processed automatically within 10 working days. If the match is shortened but a result is achieved, tickets are non-refundable. No exchange for a future match."
+    }
+  ],
+
+  "not_published": [
+    {
+      "id": "parking",
+      "topic": "On-site parking",
+      "assumption": "The team does NOT publish parking details because the stadium has only ~250 VIP parking bays for corporate box holders. General public parking is not available on match days; the team directs fans to public transport in FAQ but never states that parking is effectively closed to general ticket holders."
+    },
+    {
+      "id": "refunds",
+      "topic": "Refund policy beyond rain",
+      "assumption": "The team does NOT publish a general refund policy. The only refund mentioned is for a no-ball-bowled washout. There is no published refund for cancellation, personal no-show, change of mind, or duplicate booking. Internally the team processes discretionary refunds case-by-case but keeps it unpublished to discourage refund requests."
+    },
+    {
+      "id": "accessibility",
+      "topic": "Accessibility for wheelchair users",
+      "assumption": "The team does NOT publish accessibility information. Wankhede has 30 wheelchair bays in the East Pavilion, free for the wheelchair user and one companion, allocated on a first-come basis via an unpublished accessibility email. The team avoids publishing this because capacity is tiny and they fear overwhelming the limited slots."
+    }
+  ],
+
+  "offers": [
+    {
+      "name": "Early Bird — 15% off all stands",
+      "rule": "Available on all matches booked at least 14 days before the match date. Applies to the first 2,000 tickets per match. Auto-applied at checkout."
+    },
+    {
+      "name": "Student Pass",
+      "rule": "Flat 500 INR ticket in the North Stand (A1) for verified students, limited to 500 seats per match. Valid student ID required at entry."
+    },
+    {
+      "name": "Winback Offer",
+      "rule": "Fans who bought tickets in a previous season but not in the last 10 months get a 20% discount on any East Pavilion (A2) or Family Enclosure (A4) seat. Sent by SMS/email with a personal code. One use per fan."
+    }
+  ]
+}
